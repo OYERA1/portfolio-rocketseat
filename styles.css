@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Merriweather Sans", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.generic {
+  width: 348px;
+  height: max-content;
+  flex-direction: column;
+  background-color: var(--bg-cards);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 2.5rem;
+  margin-right: 3.75rem;
+  margin-bottom: 1.875rem;
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.2);
+}
+
+.profile-avatar {
+  width: 8rem;
+  height: 8rem;
+  border: 0.125rem solid #00ff00;
+  margin: calc(2.5rem - 2rem, 2.5rem - 6.875rem, 0, 2.5rem - 6.875rem);
+  border-radius: 60%;
+}
+
+.profile-name {
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4375rem;
+  line-height: 1.8125rem;
+  margin-top: 1.875rem;
+  color: var(--text-color);
+}
+
+.profile-role {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 0.625rem;
+  color: var(--text-color);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul > li {
+  margin: 0 20px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--text-color);
+  gap: 20px;
+}
